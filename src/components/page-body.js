@@ -32,7 +32,8 @@ const Body = styled.div`
 
   a {
     transition: 0.2s;
-    color: ${props => props.theme.colors.persianGreen};
+    color: #FA9500;
+    /* ${props => props.theme.colors.persianGreen};*/
     &:hover {
       color: ${props => props.theme.colors.lightningYellow};
     }

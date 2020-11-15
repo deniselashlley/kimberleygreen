@@ -56,7 +56,7 @@ const NavList = ({ isOpen }) => {
     <NavItems>
       {menuLinks.map(link => (
         <li key={link.name}>
-          {name === 'Projects' ? (
+          {link.name === 'Projects' ? (
             <AnchorLink
               to={link.slug}
               title={link.name}

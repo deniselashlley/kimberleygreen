@@ -208,10 +208,9 @@ export const globalStyles = css`
   }
 
   a,
-  &:visited,
-  &:active {
+  &:visited {
     text-decoration: none;
-    color: #00b39b;
+    color: #fa9500;
   }
   a:hover {
     color: #f9c11e;

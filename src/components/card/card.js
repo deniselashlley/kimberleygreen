@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { pxToRem } from '../../helper'
 
 const Post = styled.li`
   position: relative;
@@ -22,11 +23,36 @@ const Post = styled.li`
   }
   a {
     display: flex;
+    position: relative;
     flex-flow: column;
     height: 100%;
     width: 100%;
     color: ${props => props.theme.colors.text};
     text-decoration: none;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+      }
+  transition: .5s ease;
+
+}
+    }
+    
+    &:hover {
+      color: ${props => props.theme.colors.background};
+      &:before {
+        background: rgba(255, 165, 31, 0.5);
+        z-index: 99;
+        
+    }
+    }
     .gatsby-image-wrapper {
       height: 0;
       padding-bottom: 60%;
@@ -46,11 +72,13 @@ const StyledImg = styled(Img)`
   border-top-right-radius: 1px;
 `
 
-const Title = styled.h2`
-  font-size: 1.5em;
+const Title = styled.h3`
+  position: relative;
+  font-size: ${pxToRem(20)};
+  text-align: center;
   font-weight: 600;
-  text-transform: capitalize;
   margin: 1rem 1rem 0.5rem 1rem;
+  z-index: 999;
 `
 
 const Card = ({ slug, heroImage, title, body, ...props }) => {

@@ -14,7 +14,7 @@ const Projects = ({ data, path }) => {
     <Section id="projects">
       <SectionTitle>Projects</SectionTitle>
       <CardList>
-        {data.slice(1).map(({ node: post }) => (
+        {data.map(({ node: post }) => (
           <Card key={post.id} {...post} basePath={path} />
         ))}
       </CardList>
