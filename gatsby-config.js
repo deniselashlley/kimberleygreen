@@ -10,6 +10,10 @@ module.exports = {
     image: '/images/share.jpg',
     menuLinks: [
       {
+        name: 'Home',
+        slug: '/',
+      },
+      {
         name: 'Projects',
         slug: '/#projects',
       },

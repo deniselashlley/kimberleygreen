@@ -17,7 +17,7 @@ const ContactLinks = () => {
             title="linkedIn"
           >
             <LinkedInIcon fill="#53666E" />
-            <span>linkedIn</span>
+            <span>in/deniselashlley</span>
           </a>
         </li>
         <li>
@@ -28,7 +28,7 @@ const ContactLinks = () => {
             title="@lashlled"
           >
             <TwitterIcon fill="#53666E" />
-            <span>@lashlled</span>
+            <span>twitter.com/lashlled</span>
           </a>
         </li>
         <li>
@@ -39,13 +39,13 @@ const ContactLinks = () => {
             title="github"
           >
             <GithubIcon fill="#53666E" />
-            <span>github</span>
+            <span>github.com/deniselashlley</span>
           </a>
         </li>
         <li>
-          <a href="mailto: mail@deniselashlley.io" title="email">
+          <a href="mailto: denise@deniselashlley.io" title="email">
             <EmailIcon fill="#53666E" />
-            <span>mail@deniselashlley.io</span>
+            <span>denise@deniselashlley.io</span>
           </a>
         </li>
       </ul>
