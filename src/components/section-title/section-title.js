@@ -10,8 +10,7 @@ const Title = styled.h2`
   text-align: center;
   color: #0a65a5;
   @media (min-width: ${props => props.theme.responsive.medium}) {
-    font-size: ${pxToRem(40)};
-    margin: ${pxToRem(50)} 0;
+    margin: ${pxToRem(50)} 0 ${pxToRem(20)};
   }
 `
 

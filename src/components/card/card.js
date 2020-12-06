@@ -61,7 +61,8 @@ const Post = styled.li`
       }
 
       img {
-        object-position: top center !important;
+        object-fit: contain !important;
+        object-position: center !important;
       }
     }
   }

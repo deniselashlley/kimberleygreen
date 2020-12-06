@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         name: 'Contact',
-        slug: '/contact',
+        slug: '/#contact',
       },
     ],
     postsPerFirstPage: 7,
