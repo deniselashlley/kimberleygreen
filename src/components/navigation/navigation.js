@@ -1,70 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Media from 'react-media'
-import styled from '@emotion/styled'
 
 import NavList from './nav-list'
-import { pxToRem } from '../../helper'
-
-const MenuButton = styled.button`
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: ${pxToRem(8)};
-  margin-bottom: ${pxToRem(8)};
-  width: ${pxToRem(45)};
-  height: ${pxToRem(45)};
-  padding: 0;
-  cursor: pointer;
-
-  &:focus {
-    span {
-      background-color: ${props => (props.active ? `white` : `black`)};
-    }
-  }
-
-  span {
-    position: absolute;
-    left: 50%;
-    top: ${pxToRem(25)};
-    background-color: black;
-    display: block;
-    height: 2px;
-    width: 50%;
-    transform: translate(-50%, 0);
-    transform-origin: center center;
-
-    transition: top 0.3s ease 0.3s, transform 0.3s ease,
-      background-color 500ms ease;
-  }
-
-  span:nth-of-type(1) {
-    transform: ${props =>
-      props.active
-        ? `translate(-50%, 0) rotate(45deg)`
-        : `translate(0 0) rotate(0deg)`};
-    top: ${props => (props.active ? `${pxToRem(25)}` : `${pxToRem(18)}`)};
-  }
-
-  span:nth-of-type(2) {
-    opacity: ${props => (props.active ? `0` : `1`)};
-  }
-
-  span:nth-of-type(3) {
-    transform: ${props =>
-      props.active
-        ? `translate(-50%, 0) rotate(-45deg)`
-        : `translate(0 0) rotate(0deg)`};
-    top: ${props => (props.active ? `${pxToRem(25)}` : `${pxToRem(32)}`)};
-  }
-`
-
-const MobileNavList = styled(NavList)`
-  position: absolute;
-  top: 0;
-  z-index: 999;
-  display: block;
-  width: 100%;
-`
 
 const Navigation = () => {
   const [showMenu, setMenu] = useState(false)
@@ -94,11 +31,11 @@ const Navigation = () => {
     <nav>
       <Media query={{ maxWidth: 1100 }}>
         <>
-          <MenuButton active={showMenu} type="button" onClick={handleShowMenu}>
+          <button active={showMenu} type="button" onClick={handleShowMenu}>
             <span />
             <span />
             <span />
-          </MenuButton>
+          </button>
           {showMenu && <MobileNavList isOpen={showMenu} />}
         </>
       </Media>
