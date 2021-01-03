@@ -91,7 +91,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav overlay={showMenu}>
+    <nav>
       <Media query={{ maxWidth: 1100 }}>
         <>
           <MenuButton active={showMenu} type="button" onClick={handleShowMenu}>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
 import { Global } from '@emotion/core'
 import Header from './header'
@@ -29,25 +29,14 @@ const Skip = styled.a`
 `
 
 const Layout = props => {
-  function handleFirstTab(e) {
-    if (e.keyCode === 9) {
-      document.body.classList.add('user-is-tabbing')
-    }
-  }
-  useEffect(() => window.addEventListener('keydown', handleFirstTab), [])
 
   return (
-    <Root className="siteRoot">
-      <div className="siteContent">
-        <Skip href="#main" id="skip-navigation">
-          Skip to content
-        </Skip>
+    <div>
         <Header />
         <main id="main">{props.children}</main>
-      </div>
-      <Footer />
-      <Global styles={globalStyles} />
-    </Root>
+        <Footer />
+        <Global styles={globalStyles} />
+    </div>
   )
 }
 

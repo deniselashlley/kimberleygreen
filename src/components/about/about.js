@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import { pxToRem } from '../../helper'
-import SectionTitle from '../section-title'
 
 const IntroductionText = styled.div`
   line-height: 1.7;
@@ -28,7 +27,6 @@ const IntroductionText = styled.div`
 const About = () => {
   return (
     <section>
-      <SectionTitle>About Me</SectionTitle>
       <IntroductionText>
       <p>As a freelancer web professional, based in London, UK. <br/>I have over 10 years of industry experience.</p><p>I specialise mainly in CSS, Javascript; 
         and producing high quality, modern and web standard coded front end applications.</p>
@@ -36,7 +34,6 @@ const About = () => {
         specialise in producing high quality, modern and web standard, front-end
         development. */}
       </IntroductionText>
-      <SectionTitle>KEY SKILLS & EXPERTISE</SectionTitle>
       <IntroductionText>
         <ul>
           <li>Javascript</li>
