@@ -8,10 +8,10 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404" description="Page Not Found" />
       <h1>Page Not Found</h1>
-      <Text>
+      <p>
         Please return <Link to="/">home</Link> or use the menu to navigate to a
         different page.
-      </Text>
+      </p>
   </Layout>
 )
 
