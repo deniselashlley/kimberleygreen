@@ -27,7 +27,6 @@ module.exports = {
     basePath: '/',
   },
   plugins: [
-    'gatsby-plugin-postcss'
     `gatsby-plugin-emotion`,
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-react-helmet',
