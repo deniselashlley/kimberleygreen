@@ -1,5 +1,11 @@
-# Denise Lashlley
+# Kimberley Green
 
+Setup your contentful data locally, follow the steps and this will produce the 'contentful.json'.
+
+```
+$ yarn setup
+
+```
 ### Run the project
 
 ```

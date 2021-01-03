@@ -3,10 +3,10 @@ require('dotenv').config({
 })
 module.exports = {
   siteMetadata: {
-    title: 'Denise Lashlley | Portfolio',
+    title: 'Kimberley Green — Social Impact Consultant',
     description:
-      'Denise is a web professional specialising in modern front-end development, based in London, UK',
-    siteUrl: 'https://deniselashlley.io/',
+      'Social impact consultant based in the UK, Ghana providing strategy development and capacity building services for the public and private sector',
+    siteUrl: 'https://www.kimberleygreen.co.uk/',
     image: '/images/share.jpg',
     menuLinks: [
       {
@@ -27,6 +27,7 @@ module.exports = {
     basePath: '/',
   },
   plugins: [
+    'gatsby-plugin-postcss',
     `gatsby-plugin-emotion`,
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-react-helmet',

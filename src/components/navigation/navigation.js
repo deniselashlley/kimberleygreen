@@ -5,25 +5,6 @@ import styled from '@emotion/styled'
 import NavList from './nav-list'
 import { pxToRem } from '../../helper'
 
-const Nav = styled.nav`
-  position: ${props => (props.overlay ? `fixed` : `relative`)};
-  background: ${props => (props.overlay ? props.theme.colors.baliHai : `none`)};
-  opacity: 0.98;
-  z-index: 999;
-  width: 100%;
-  overflow: ${props => (props.overlay ? `hidden` : `visible`)};
-  height: ${props => (props.overlay ? `100vh` : `auto`)};
-  transition: 0.5s;
-
-  @media (min-width: 1101px) {
-    position: static;
-    display: flex;
-    justify-content: flex-end;
-    opacity: 1;
-    zindex: 0;
-  }
-`
-
 const MenuButton = styled.button`
   position: absolute;
   right: 0;
@@ -110,7 +91,7 @@ const Navigation = () => {
   }
 
   return (
-    <Nav overlay={showMenu}>
+    <nav overlay={showMenu}>
       <Media query={{ maxWidth: 1100 }}>
         <>
           <MenuButton active={showMenu} type="button" onClick={handleShowMenu}>
@@ -124,7 +105,7 @@ const Navigation = () => {
       <Media query={{ minWidth: 1101 }}>
         <NavList />
       </Media>
-    </Nav>
+    </nav>
   )
 }
 
