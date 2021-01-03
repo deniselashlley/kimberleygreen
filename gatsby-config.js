@@ -27,11 +27,18 @@ module.exports = {
     basePath: '/',
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    'gatsby-plugin-postcss'
     `gatsby-plugin-emotion`,
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images',
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
