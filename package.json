@@ -6,7 +6,6 @@
   "author": "Ryan Wiemer <ryan@ryanwiemer.com>",
   "dependencies": {
     "@emotion/react": "^11.1.4",
-    "autoprefixer": "^10.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "chalk": "^3.0.0",
     "contentful-import": "^7.6.2",
